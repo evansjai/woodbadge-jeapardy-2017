@@ -4136,11 +4136,11 @@
     game.createScoreboard = function() {
         var content = "<table cellspacing=10><tbody><tr>";
         var patrols = new Array('Beaver', 'Bobwhite', 'Eagle', 'Fox', 'Owl', 'Bear', 'Buffalo', 'Antelope', 'Raven');
-        for (var i = 0; i <= game.team_cnt; i++) {
+        for (var i = 0; i < game.team_cnt; i++) {
             content += "<th><h3>" + patrols[i] + "</h3></th>";
         }
         content += "</tr><tr>";
-        for (var i = 0; i <= game.team_cnt; i++) {
+        for (var i = 0; i < game.team_cnt; i++) {
             content += "<td><h3 id='team" + i + "'>0</h3><input class='add-points' onclick='game.addPoints(" + i + ")' value='+' type='button' /> <input class='subtract-points' onclick='game.subtractPoints(" + i + ")' type='button' value='-' /></td>";
         }
         content += "</tr></tbody></table>";
@@ -4218,7 +4218,7 @@
                     <h3>100</h3>
                     <div class="hide">
                         <div id="q00">Do Your Best</div>
-                        <div id="aq00">What is the Tiger Cub Motto?</div>
+                        <div id="aq00">What is the Cub Scout Motto?</div>
                     </div>
                 </td>
                 <td id="tq01" class="cell clean" onclick="prompt.show('q01', 100)">
@@ -4238,14 +4238,14 @@
                 <td id="tq03" class="cell clean" onclick="prompt.show('q03', 100)">
                     <h3>100</h3>
                     <div class="hide">
-                        <div id="q03">All male, all female, and co-ed</div>
-                        <div id="aq03">Venturing crews can be made up of three different gender groupings. What are they?</div>
+                        <div id="q03">Venturing Award</div>
+                        <div id="aq03">What is the first advancement award specific to the Venturing program that a Venturer may earn?</div>
                     </div>
                 </td>
                 <td id="tq04" class="cell clean" onclick="prompt.show('q04', 100)">
                     <h3>100</h3>
                     <div class="hide">
-                        <div id="q04">No. (According to the Insignia Guide, districts are “operational arms” of a council. No district identification or insignia is to be worn on the official uniform.)</div>
+                        <div id="q04">No. (According to the Guide to Awards and Insignia, districts are "operational arms" of a council. No district identification or insignia is to be worn on the official uniform.)</div>
                         <div id="aq04">Can a district identification patch or district insignia be worn on a BSA uniform?</div>
                     </div>
                 </td>
@@ -4268,7 +4268,7 @@
                 <td id="tq10" class="cell clean" onclick="prompt.show('q10', 200)">
                     <h3>200</h3>
                     <div class="hide">
-                        <div id="q10">3 months</div>
+                        <div id="q10">No Minimum</div>
                         <div id="aq10">What is the minimum amount of time that a boy needs to be active as a Webelos Scout before he can earn the Webelos badge?</div>
                     </div>
                 </td>
@@ -4289,8 +4289,8 @@
                 <td id="tq13" class="cell clean" onclick="prompt.show('q13', 200)">
                     <h3>200</h3>
                     <div class="hide">
-                        <div id="q13">Venturing Award, Discovery Award, Pathfinder Award, and Summit Award</div>
-                        <div id="aq13">What are the four youth awards unique to Venturing?</div>
+                        <div id="q13">All male, all female, and co-ed</div>
+                        <div id="aq13">Venturing crews can be made up of three different gender groupings. What are they?</div>
                     </div>
                 </td>
                 <td id="tq14" class="cell clean" onclick="prompt.show('q14', 200)">
@@ -4370,8 +4370,8 @@
                 <td id="tq30" class="cell clean" onclick="prompt.show('q30', 400)">
                     <h3>400</h3>
                     <div class="hide">
-                        <div id="q30">Gold knot on a blue background</div>
-                        <div id="aq30">What colors are in the recognition knot for the Den Leader Training Award?</div>
+                        <div id="q30">A Duty to God adventure</div>
+                        <div id="aq30">Which Cub Scout adventure is required at each rank?</div>
                     </div>
                 </td>
                 <td id="tq31" class="cell clean" onclick="prompt.show('q31', 400)">
@@ -4384,8 +4384,8 @@
                 <td id="tq32" class="cell clean" onclick="prompt.show('q32', 400)">
                     <h3>400</h3>
                     <div class="hide">
-                        <div id="q32">Denali Award and Varisty Letter</div>
-                        <div id="aq32">Name the two major youth awards that are unique to Varsity Scouting.</div>
+                        <div id="q32">Service, High Adventure and Sports, Personal Development, Advancement, and Special Programs and Events</div>
+                        <div id="aq32">Name two of the five fields of emphasis in Varsity Scouting.</div>
                     </div>
                 </td>
                 <td id="tq33" class="cell clean" onclick="prompt.show('q33', 400)">

@@ -4136,11 +4136,11 @@
     game.createScoreboard = function() {
         var content = "<table cellspacing=10><tbody><tr>";
         var patrols = new Array('Beaver', 'Bobwhite', 'Eagle', 'Fox', 'Owl', 'Bear', 'Buffalo', 'Antelope', 'Raven');
-        for (var i = 0; i <= game.team_cnt; i++) {
+        for (var i = 0; i < game.team_cnt; i++) {
             content += "<th><h3>" + patrols[i] + "</h3></th>";
         }
         content += "</tr><tr>";
-        for (var i = 0; i <= game.team_cnt; i++) {
+        for (var i = 0; i < game.team_cnt; i++) {
             content += "<td><h3 id='team" + i + "'>0</h3><input class='add-points' onclick='game.addPoints(" + i + ")' value='+' type='button' /> <input class='subtract-points' onclick='game.subtractPoints(" + i + ")' type='button' value='-' /></td>";
         }
         content += "</tr></tbody></table>";
